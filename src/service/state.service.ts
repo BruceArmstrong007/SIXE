@@ -18,7 +18,7 @@ export class SixeStateService{
         return this.state;
     }
 
-    setState(data: State){
+    setState<State>(data: State){
         this.sharedWorker.port.postMessage(data);
     }
 }
