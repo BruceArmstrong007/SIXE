@@ -1,6 +1,6 @@
-connections = [];
-state = {}
- self.onconnect = (connectEvent) => {
+let connections = [];
+let state = {}
+ this.onconnect = (connectEvent) => {
    const port = connectEvent.ports[0];
 
    port.start();

@@ -1,5 +1,15 @@
 {
     "name": "sixe",
-    "version": "0.0.1"
-    
+    "version": "0.0.1",
+    "repository": "git@BruceArmstrong007.git.com:BruceArmstrong007/sixe.git",
+    "author": "Bruce Armstrong <brucearmstrongofficial@gmail.com>",
+    "license": "MIT",
+    "scripts": {
+        "compile": "npm run compile:win && npm run compile:lin",
+        "compile:win": "node -e \"if (process.platform === 'win32') process.exit(1)\" || , if exist dist rmdir /Q /S dist && tsc && tsc --build tsconfig.es5.json",
+        "compile:lin": "node -e \"if (process.platform !== 'win32') process.exit(1)\" || rm -rf dist && tsc && tsc --build tsconfig.es5.json"
+    },
+    "devDependencies": {
+        "typescript": "^4.9.5"
+    }
 }

@@ -1,0 +1,31 @@
+{
+    "name" : "@sixe/state",
+    "version": "0.0.1",
+    "main" : "lib/es6/index.js",
+    "module": "lib/es6/index.js",
+    "sideEffects": false,
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/BruceArmstrong007/sixe.git"
+    },
+    "files": [
+        "lib",
+        "package.json",
+        "README.md",
+        "CHANGELOG.md",
+        "LICENSE"
+    ],
+    "keywords": [
+        "statemanagement",
+        "web workers",
+        "shared workers",
+        "typescript state",
+        "sixe"
+    ],
+    "author": "Bruce Armstrong",
+    "license": "MIT",
+    "bugs" : {
+        "url": "https://github.com/BruceArmstrong007/sixe/issues"
+    },
+    "homepage": "https://github.com/BruceArmstrong007/sixe#readme"
+}
