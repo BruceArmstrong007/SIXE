@@ -1,6 +1,6 @@
 {
     "name" : "@sixe/state",
-    "version": "0.0.3",
+    "version": "1.0.0",
     "description": "State Management for Typescript Browser Applications",
     "main" : "lib/es5/index.js",
     "module": "lib/es6/index.js",
