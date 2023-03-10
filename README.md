@@ -1,5 +1,5 @@
 # SIXE
-## Single State Management tool for Angular, React, Vue and others
+## Lightweight State Management Library for Angular, React, Vue and others
 
 [SIXE](/ico/sixe.ico)
 

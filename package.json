@@ -1,6 +1,6 @@
 {
     "name": "sixe",
-    "version": "1.2.8",
+    "version": "1.3.0",
     "repository": "git@BruceArmstrong007.git.com:BruceArmstrong007/sixe.git",
     "author": "Bruce Armstrong <brucearmstrongofficial@gmail.com>",
     "description": "State Management for Typescript SPAs",
