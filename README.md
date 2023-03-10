@@ -57,10 +57,15 @@ or
 npm i sixe@latest
 ```
 
+## Support
+- All major desktop browers - Chrome, Edge, Firefox, Opera, Safari
+- Few mobile browsers - Firefox for Android, Safari on iOS
+
+For more details visit [mdn web docs](https://developer.mozilla.org/en-US/docs/Web/API/SharedWorker)
 
 ## License
 
 MIT
-## Support
+## Issues
  Raise issues here - [github/issues](https://github.com/BruceArmstrong007/SIXE/issues)
 
