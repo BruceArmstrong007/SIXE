@@ -7,6 +7,6 @@
     "outDir": "./dist",
     "noImplicitAny": true
   },
-  "include": ["src/**/*","src/worker/state.worker.js"],
+  "include": ["src/**/*"],
   "exclude": ["node_modules"]
 }

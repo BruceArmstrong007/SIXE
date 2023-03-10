@@ -1,4 +1,4 @@
-const workerPath = './../worker/state.worker.js';
+import { worker } from "../worker/state.worker";
 
 export type State = {
     name: string;
@@ -6,19 +6,18 @@ export type State = {
 } 
 export class SixeStateService{
     sharedWorker: SharedWorker;
-    state : State;
+    state : any;
+    sixe : any;
     constructor(){
-    this.sharedWorker = new SharedWorker(workerPath);
-    this.sharedWorker.port.onmessage = ({data}) => {
-        this.state = data;
-    };
+        const scriptBlob = new Blob([worker.toString().replace(/^function .+\{?|\}$/g, '')], { type: "text/javascript" });
+        const workerUrl = URL.createObjectURL(scriptBlob);
+        this.sharedWorker = new SharedWorker(workerUrl);
+        this.sixe = this.sharedWorker.port;
     }
 
-    getState(){
-        return this.state;
-    }
 
     setState<State>(data: State){
+        console.log(data);
         this.sharedWorker.port.postMessage(data);
     }
 }

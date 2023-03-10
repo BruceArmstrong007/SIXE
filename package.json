@@ -1,15 +1,17 @@
 {
     "name": "sixe",
-    "version": "1.0.2",
+    "version": "1.2.3",
     "repository": "git@BruceArmstrong007.git.com:BruceArmstrong007/sixe.git",
     "author": "Bruce Armstrong <brucearmstrongofficial@gmail.com>",
     "description": "State Management for Typescript SPAs",
     "main": "dist/index.js",
-    "types": "dis/index.d.ts",
+    "types": "dist/index.d.ts",
     "files": [
         "/dist"
     ],
     "scripts": {
+        "CP": "npm run compile && npm run pub",
+        "pub" : "npm publish --access=public",
         "test": "echo \"Error : No tests specified\" && exit 1",
         "compile": "rimraf dist && npx tsc"
     },
