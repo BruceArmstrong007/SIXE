@@ -1,13 +1,14 @@
 {
     "name": "sixe",
-    "version": "1.2.5",
+    "version": "1.2.6",
     "repository": "git@BruceArmstrong007.git.com:BruceArmstrong007/sixe.git",
     "author": "Bruce Armstrong <brucearmstrongofficial@gmail.com>",
     "description": "State Management for Typescript SPAs",
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
     "files": [
-        "/dist"
+        "/dist",
+        "README.md"
     ],
     "scripts": {
         "CP": "npm run compile && npm run pub",
@@ -21,11 +22,12 @@
         "typescript": "^4.9.5"
     },
     "keywords": [
-        "statemanagement",
+        "state management",
         "web workers",
         "shared workers",
-        "typescript state",
-        "sixe"
+        "typescript",
+        "sixe",
+        "sixe state management tool"
     ],
     "license": "MIT",
     "bugs": {
