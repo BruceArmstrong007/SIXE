@@ -1,8 +1,7 @@
 # SIXE
 ## Single State Management tool for Angular, React, Vue and others
 
-[![SIXE](/ico/sixe.ico)](https://github.com/BruceArmstrong007/SIXE)
-
+<img src="/ico/sixe.ico" alt="SIXE" title="SIXE">
 
 
 SIXE is a state management tool built on top of typescript, that helps your client application manage its state regardless of the web framework/library you use,
