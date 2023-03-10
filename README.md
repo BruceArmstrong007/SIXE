@@ -1,7 +1,7 @@
 # SIXE
 ## Single State Management tool for Angular, React, Vue and others
 
-[![SIXE](https://github.com/BruceArmstrong007/SIXE/blob/main/ico/sixe.png)](https://github.com/BruceArmstrong007/SIXE)
+[![SIXE](./ico/sixe.ico)](https://github.com/BruceArmstrong007/SIXE)
 
 
 
