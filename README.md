@@ -13,7 +13,7 @@ SIXE is a state management tool built on top of typescript, that helps your clie
 - State is outside main thread - runs in seperate thread for Performace
 - Maintains State aross tabs and windows - state managed in shared worker
 - Can create multiple states - ✨Magic ✨
-- Lightweight - Unpack Size 4.65 kB
+- Lightweight - Low unpack size
 - No dependencies
 
 ## Tech
