@@ -3,7 +3,7 @@
 
 [SIXE](/ico/sixe.ico)
 
-SIXE is a state management tool built on top of typescript, that helps your client application manage its state regardless of the web framework/library you use,
+SIXE is a global state management tool built on top of typescript, that helps your client application manage its state regardless of the web framework/library you use,
 
 
 
@@ -12,7 +12,6 @@ SIXE is a state management tool built on top of typescript, that helps your clie
 - Works on top of any frontend typescript framework/library
 - State is outside main thread - runs in seperate thread for Performace
 - Maintains State aross tabs and windows - state managed in shared worker
-- Can create multiple states - ✨Magic ✨
 - Lightweight - Low unpack size
 - No dependencies
 
@@ -23,11 +22,11 @@ SIXE is a state management tool built on top of typescript, that helps your clie
 Checkout SIXE's Git Repo - [[public repository](https://github.com/BruceArmstrong007/SIXE)] on GitHub.
 
 ## Usage
-    /* to initialize the service */
-    var stateService = new SixeStateService();
+    /* to initialize the service Appname is optional */
+    var stateService = new SixeStateService('AppName');
     
     /* to set/update state */
-     this.stateService.setState({
+    this.stateService.setState({
       name: 'sixe',
       data : ['grapes', 'tomato']
     });

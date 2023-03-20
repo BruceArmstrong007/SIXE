@@ -8,16 +8,27 @@ export class SixeStateService{
     sharedWorker: SharedWorker;
     state : any;
     sixe : any;
-    constructor(){
-        const scriptBlob = new Blob([worker.toString().replace(/^function .+\{?|\}$/g, '')], { type: "text/javascript" });
-        const workerUrl = URL.createObjectURL(scriptBlob);
-        this.sharedWorker = new SharedWorker(workerUrl);
+    id : string;
+    constructor(stateName = ''){
+        this.id = 'sixe'+stateName;
+        let workerURL = localStorage.getItem(this.id);
+        if(!workerURL){
+            let scriptBlob = new Blob([worker.toString().replace(/^function .+\{?|\}$/g, '')], { type: "text/javascript" });
+            workerURL = URL.createObjectURL(scriptBlob);
+            localStorage.setItem(this.id,workerURL);
+        } 
+        this.sharedWorker = new SharedWorker(workerURL);
         this.sixe = this.sharedWorker.port;
     }
 
 
     setState<State>(data: State){
-        console.log(data);
         this.sharedWorker.port.postMessage(data);
     }
+    
+    close(){
+        this.sixe.close();
+        localStorage.removeItem(this.id);
+    }
+
 }
