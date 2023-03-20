@@ -74,3 +74,7 @@ MIT
 ## Issues
  Raise issues here - [github/issues](https://github.com/BruceArmstrong007/SIXE/issues)
 
+
+## Image for multi window state management
+<img width="959" alt="image" src="https://user-images.githubusercontent.com/48177059/226348113-f563e41e-579c-4c95-9fea-c6a2429ddf75.png">
+
