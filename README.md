@@ -36,6 +36,12 @@ Checkout SIXE's Git Repo - [[public repository](https://github.com/BruceArmstron
         let state = event?.data;
         console.log(state)
     };
+
+    /* 
+     once all browsers for this SPA (connections) are closed 
+     inside window event listener 'beforeunload'
+    */
+      if (!this.state || this.state.connections == 1) stateService.close();
     
 Note : 
 - Angular users might need to run NgZone inside onmessage event function to get their state properly, 
