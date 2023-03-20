@@ -49,8 +49,8 @@ Note :
 
 ## Examples (Angular ,React, Vue)
 https://stackblitz.com/@BruceArmstrong007/collections/sixe-typescript-state-management-tool
-    
-    
+ 
+Example in Angular - https://github.com/BruceArmstrong007/SIXE-Example-Angular- 
 
 ## Installation
 
